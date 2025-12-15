@@ -44,5 +44,33 @@ Follow these steps to run the application locally on your machine.
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/UHDNMJayalath/Luminex-pdf-chat.git](https://github.com/UHDNMJayalath/Luminex-pdf-chat.git)
-cd Luminex-pdf-chat 
-
+cd Luminex-pdf-chat
+```
+### 2. Create a Virtual Environment
+#### For Windows:
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+#### For Mac/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Configure API Keys
+#### Create a .env file in the root directory and add your HuggingFace API Token:
+```bash
+HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token_here
+```
+### 5. Run the App
+```bash
+streamlit run app.py
+```
+### 👨‍💻 Author
+#### Nishaka Mahesh Luminex Technologies
+---
+<p align="center"> © 2025 Luminex Technologies. All Rights Reserved. </p>
